@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:meta/meta.dart';
 import 'package:taskapp/ui/screens/splash_screen.dart';
 
 class TaskManagerApp extends StatelessWidget {

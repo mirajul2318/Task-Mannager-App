@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import "package:flutter_svg/flutter_svg.dart";
 import '../utils/asset_paths.dart';
 
 class ScreenBackground extends StatelessWidget {
@@ -11,7 +11,7 @@ class ScreenBackground extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Image.asset(AssetPaths.bg,
+        SvgPicture.asset(AssetPaths.bg,
           height: double.maxFinite,
           width: double.maxFinite,),
         SafeArea(child: child)

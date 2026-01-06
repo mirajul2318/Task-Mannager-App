@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:taskapp/ui/screens/login_page.dart';
 import 'package:taskapp/ui/utils/asset_paths.dart';
 import 'package:taskapp/ui/weigets/screen_background.dart';
-//import 'package:flutter_svg/flutter_svg.dart';
+import "package:flutter_svg/flutter_svg.dart";
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -30,9 +30,8 @@ class _SplashScreenState extends State<SplashScreen> {
       body:
           ScreenBackground(child:
           Center(
-            child: Image.asset(AssetPaths.logo,
-            height: double.infinity,
-            width: 500,),
+            child: SvgPicture.asset(AssetPaths.logo,
+            width: 200,),
           )),
     );
   }
