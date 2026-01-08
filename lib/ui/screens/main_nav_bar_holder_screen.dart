@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:taskapp/ui/screens/progress_task_screen.dart';
+
+import 'new_task_screen.dart';
 
 class MainNavBarHolderScreen extends StatefulWidget {
   const MainNavBarHolderScreen({super.key});
@@ -12,16 +15,23 @@ class _MainNavBarHolderScreenState extends State<MainNavBarHolderScreen> {
   int _selectedIndex = 0;
 
   List<Widget> _screens = [
-
+    Newtaskscreen(),
+    ProgressTaskScreen(),
+    ProgressTaskScreen(),
+    ProgressTaskScreen(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: _screens[_selectedIndex],
       bottomNavigationBar: NavigationBar(
-          //selectedIndex: ,
+          selectedIndex: _selectedIndex,
           onDestinationSelected: (int index){
+            _selectedIndex = index;
+            setState(() {
 
+            });
           },
           destinations: [
         NavigationDestination(icon: Icon(Icons.add_box), label: 'New Task'),

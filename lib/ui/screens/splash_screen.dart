@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:taskapp/ui/screens/login_page.dart';
 import 'package:taskapp/ui/utils/asset_paths.dart';
 import 'package:taskapp/ui/weigets/screen_background.dart';
-import "package:flutter_svg/flutter_svg.dart" show SvgPicture;
+import 'package:flutter_svg/flutter_svg.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
